@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e3edf7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skill {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+.outer {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    padding: 40px;
+
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7)
+}
+
+.inner {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                      -0.5px -0.5px 0px rgba(255,255,255,1),
+                      0.5px 0.5px 0px rgba(0,0,0,0.15),
+                      0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+.number {
+    font-size: 40px;
+    font-weight: 900;
+    color: #555;
+}
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 40px;
+    stroke-dasharray: 670;
+    stroke-dashoffset: 670;
+    animation: anim 2s linear forwards;
+}
+#circle-02 {
+    animation: anim02 2s linear forwards; 
+}
+#circle-03 {
+    animation: anim03 2s linear forwards; 
+}
+#svg-01 {
+    position: absolute;
+    top: 69px;
+    left: -5px;
+    /* top: 165.7px;
+    left: 178.5px; */
+}
+#svg-02 {
+    position: absolute;
+    top: 69px;
+    left: 334px;
+}
+
+#svg-03 {
+    position: absolute;
+    top: 69px;
+    right: 26px;
+     /* right: 210px; */
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 167.5;
+    }
+}
+
+@keyframes anim02{
+    100%{
+        stroke-dashoffset: 234.5;
+    }
+}
+@keyframes anim03{
+    100%{
+        stroke-dashoffset: 435.5;
+    }
+}
